@@ -1,0 +1,50 @@
+<head>
+    <style>
+        .c1{
+        height: 300px;
+        width: 500px;
+        }
+        .c2{
+        display: inline-block;
+        height: 100px;
+        width: 25%;
+        border: 3px solid red;
+        }
+        .center{
+        /* 前后为0, 左右auto, 默认居中 */
+        margin: 0 auto;
+        width: 1500px;
+        height: 5000px;
+        background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <span class="c1">B</span>
+        <div class="c1">A</div>
+        <span class="c2">C</span>
+        <span class="c2">D</span>
+        <span class="c2">E</span>
+        <span class="c2">F</span>
+        <div>
+            <div>左边</div>
+            <!-- 左右分布 -->
+            <div style="float: left">左边</div>
+            <div style="float: left">左边</div>
+            <div style="float: left">左边</div>
+        </div>
+        <div>bbbbb</div>
+        
+        <div>
+            <div>左边</div>
+            <!-- 左右分布 -->
+            <div style="float: left">左边</div>
+            <div style="float: left">左边</div>
+            <div style="float: left">左边</div>
+            <div style="clear: both;"></div>
+        </div>
+        <div>bbbbb</div>
+    </div>
+</body>
+
